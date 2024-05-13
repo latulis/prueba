@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.padre{
+    background-color: gold;
+    width:60vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.padre .hijo{
+    background-color: red;
+    width: 20vw;
+    height: 20vh;
+    border: solid black 1px;
+}
+.padre .hijo:first-child{
+    background-color: rgb(0, 183, 255);
+}

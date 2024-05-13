@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.padre{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;/*espacio entre bloques*//*otros: column-gap,row-gap*/
+    justify-content: center;/*Otros: space beetween*/
+    align-items: center;
+    flex-wrap: wrap;/*si no hay espacio se van para abajo*/
+}
+
+.hijo{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(180, 64, 83);
+    border-radius: 15px;/*redondeado de los bordes*/
+    border: 1px solid black;
+    text-align:center;/*posicion del texto*/
+}

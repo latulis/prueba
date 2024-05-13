@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.padre{
+    height: 200vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.padre .hijo{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 1px solid black;
+    z-index: 2;
+    
+}
+
+.padre .hijo:nth-child(2){
+    background-color: red;
+    position: absolute;/*otros: static | relative | absolute | sticky | fixed */
+    bottom: 20px;/*mueve para arriba*/ 
+    /*top:20px */ /*para mover para abajo*//*se puede usar right/left para mover para los lados */
+    z-index: 1;/*para sobreponer sobre otros,minetras menor sea el numero mas atras va estar,,,,el fondo es 0*/
+    right: 200px;
+    top: 0;
+}
+
+.padre .hijo:nth-child(3){
+    background-color: yellow;
+    position: fixed;/*otros: static | relative | absolute | sticky | fixed */
+    bottom: 20px;/*mueve para arriba*/ 
+    /*top:20px */ /*para mover para abajo*//*se puede usar right/left para mover para los lados */
+    z-index: 1;/*para sobreponer sobre otros,minetras menor sea el numero mas atras va estar,,,,el fondo es 0*/
+    left: 200px;
+    top: 0;
+    /*El fixed esta bueno para los header*/
+}
+

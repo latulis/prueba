@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hijo{
+    width: 33vw;
+    height: 33vh;
+    background-color: rebeccapurple;
+    border: black solid 1vw;
+}
+
+@media screen and (min-width:1000px){
+    .padre{
+        background-color: pink;
+    }
+}
