@@ -19,9 +19,12 @@
     background-color: rebeccapurple;
     border: black solid 1vw;
 }
-
+/*Las mediaquires deben ir abajo del todo siempre*/
 @media screen and (min-width:1000px){
     .padre{
         background-color: pink;
     }
-}
+    .padre .hijo{
+        background-color: green;
+    }
+    }
