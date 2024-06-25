@@ -4,9 +4,8 @@
 4)Crea una función llamada restar(a,b) y nos devuelva la resta de a y b
 5)Crea una función llamada calcular(operación,a,b) y dependiendo de si la operación es “+” o “-” invocar la función sumar(a,b) o restar(a,b) (retornar el resultado), en caso de recibir una operación no válida devolver null
 6)Crea una función llamada contarHasta(número) y nos cuente hasta ese número por consola*/
-let i = 0 
-while(i<3){
-    let nombre = prompt('Ingrese un nombre: ')
+
+let nombre = prompt('Ingrese un nombre: ')
 
 function decirNombre(nombre){
     alert('Hola '+nombre)
@@ -51,9 +50,3 @@ function calcular(operacion,a,b){
 }
 
 alert('El resultado de la operacion es: '+calcular(operación,numero1,numero2))
-
-
-
-
-i = i+1
-}

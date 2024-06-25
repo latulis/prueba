@@ -42,28 +42,5 @@ console.log('La posicion de juan es '+posiciondejuan)
 
 
 
-const nombres2 = ['maria', 'pedro', 'leonel', 'ezequiel', 'elias', 'lucas', 'julieta', 'abril', 'lautaro']
 
-let posiciondeLeonel = nombres2.indexOf('leonel')
-nombres2.splice(posiciondeLeonel , 1)
-
-let posiciondeLucas = nombres2.indexOf('lucas')
-nombres2.splice((posiciondeLucas - 1) , 1)
-
-
-let posiciondeAbril = nombres2.indexOf('abril')
-nombres2.splice((posiciondeAbril) , 0,'sofia')
-
-console.log(nombres2)
-
-//includes retornea un boolean si el elemento esta en el array  console.log(nombres2.includes('jose'))
-
-let caracteres = 0
-
-for(let index = 0 ; index < nombres2.length ; index = index+1){
-    console.log(nombres2[index])
-    caracteres = caracteres + nombres2[index].length
-}
-
-console.log(caracteres)
 
